@@ -154,7 +154,7 @@ contract KipuBank is ERC20, AccessControl {
         _grantRole(ADMIN_ROLE, msg.sender);
 
         // Approve Permit2 for USDC (useful for possible future reverse swaps)
-        IERC20(_usdc).approve(_permit2, type(uint256).max);
+        // IERC20(_usdc).approve(_permit2, type(uint256).max);
     }
 
     // ================== ORACLE (for metrics only) ==================
